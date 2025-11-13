@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+Slooze_Analysis/results/* filter=lfs diff=lfs merge=lfs -text
