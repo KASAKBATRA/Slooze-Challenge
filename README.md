@@ -1,9 +1,9 @@
-# 🧾 Slooze Take Home Challenge — Data Science & Analytics
+# 🧾 Slooze Take Home Challenge - Data Science & Analytics
 
 ### Inventory, Purchase & Sales Analysis for Business Optimization
 
 ---
-# Slooze Take Home Challenge — Detailed README
+# Slooze Take Home Challenge 
 
 This README explains where files live, how the notebooks are organized, and step-by-step instructions to run the analysis locally on Windows (PowerShell). It is written so a reviewer can reproduce results quickly.
 
@@ -31,19 +31,19 @@ This README explains where files live, how the notebooks are organized, and step
 
 ---
 
-## Notebook overview — what each notebook does (short, shareable descriptions)
+## Notebook overview - what each notebook does (short, shareable descriptions)
 
-- `01_data_cleaning.ipynb` — Load the raw CSVs from `Data/`, inspect headers and sample rows, normalize columns (date, sku, quantity, revenue), save cleaned CSVs into `data/cleaned/`. This is where you should adjust column-name mappings if your CSV headers differ.
+- `01_data_cleaning.ipynb` - Load the raw CSVs from `Data/`, inspect headers and sample rows, normalize columns (date, sku, quantity, revenue), save cleaned CSVs into `data/cleaned/`. This is where you should adjust column-name mappings if your CSV headers differ.
 
-- `02_sales_analysis.ipynb` — Load `sales_cleaned.csv` and produce: SKU summary (`sku_summary.csv`), monthly totals (`monthly_sales.csv`), and a `monthly_revenue.png` chart. These are the key outputs for sales performance.
+- `02_sales_analysis.ipynb` - Load `sales_cleaned.csv` and produce: SKU summary (`sku_summary.csv`), monthly totals (`monthly_sales.csv`), and a `monthly_revenue.png` chart. These are the key outputs for sales performance.
 
-- `03_inventory_optimization.ipynb` — Merge sales and price data (if available), compute inventory value estimates, and run ABC classification (`sku_abc.csv`). Useful for prioritizing SKUs.
+- `03_inventory_optimization.ipynb` - Merge sales and price data (if available), compute inventory value estimates, and run ABC classification (`sku_abc.csv`). Useful for prioritizing SKUs.
 
-- `04_forecasting.ipynb` — Simple demand forecast demo (rolling average). Produces a small forecast CSV for the top SKU; optional ARIMA forecast if `pmdarima` is installed.
+- `04_forecasting.ipynb` - Simple demand forecast demo (rolling average). Produces a small forecast CSV for the top SKU; optional ARIMA forecast if `pmdarima` is installed.
 
-- `05_eoq_reorderpoint.ipynb` — Calculates EOQ and Reorder Point suggestions using sales and (if available) unit cost data. Saves `sku_eoq_rop.csv`.
+- `05_eoq_reorderpoint.ipynb` - Calculates EOQ and Reorder Point suggestions using sales and (if available) unit cost data. Saves `sku_eoq_rop.csv`.
 
-- `06_final_insights.ipynb` — Gathers the most important CSV outputs and prints a concise, human-readable summary and practical recommendations for business stakeholders.
+- `06_final_insights.ipynb` - Gathers the most important CSV outputs and prints a concise, human-readable summary and practical recommendations for business stakeholders.
 
 ---
 
@@ -95,7 +95,7 @@ Notes:
 ## Expected outputs (where to look)
 
 - Cleaned CSVs: `Slooze_Analysis/data/cleaned/` (e.g., `sales_cleaned.csv`)
-- Key results: `Slooze_Analysis/results/` — `sku_summary.csv`, `monthly_sales.csv`, `monthly_revenue.png`, `sku_abc.csv`, `sku_eoq_rop.csv`, and forecast CSVs.
+- Key results: `Slooze_Analysis/results/` - `sku_summary.csv`, `monthly_sales.csv`, `monthly_revenue.png`, `sku_abc.csv`, `sku_eoq_rop.csv`, and forecast CSVs.
 
 Share these CSVs and the `monthly_revenue.png` figure when preparing a short stakeholder email or slide.
 
