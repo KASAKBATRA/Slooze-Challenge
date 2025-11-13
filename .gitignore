@@ -1,0 +1,6 @@
+﻿Data/
+Slooze_Analysis/data/cleaned/
+Slooze_Analysis/results/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
